@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* logo */}
       <div className=" w-[40px] h-[40px] md:w-[50px] md:h-[50px] overflow-hidden rounded-full">
         <Image
-          src={"/profile.jpg"}
+          src={"/dev_k_neon.png"}
           alt="logo"
           width={50}
           height={50}
