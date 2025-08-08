@@ -39,7 +39,7 @@ const Contact = () => {
   };
   console.log(subject, message);
   return (
-    <div className=" max-w-3xl mx-auto my-10 border-b-2 pb-4 px-3 text-center">
+    <div className=" max-w-3xl mx-auto my-10 border-b-2 pb-4 px-3 text-center bg-green-400">
       <h1 className=" text-4xl font-bold text-gray-800 my-6">
         Let's Work Together
       </h1>
@@ -49,7 +49,10 @@ const Contact = () => {
         out!
       </p>
 
-      <form onSubmit={handleSubmit} className=" max-w-2xl mx-auto mt-4 px-2">
+      <form
+        onSubmit={handleSubmit}
+        className=" max-w-2xl mx-auto mt-4 px-2 bg-red-400"
+      >
         <div className=" flex flex-col gap-1 w-full items-start">
           <label htmlFor="subject">Subject</label>
           <input

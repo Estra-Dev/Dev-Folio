@@ -83,17 +83,19 @@ const About_Me = () => {
         </div>
 
         {/* Projects, Experience etc.. */}
-        <div className=" grid grid-cols-2 gap-6">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
           {about.map((item) => {
             const IconComponents = item.icon;
             return (
               <div
                 key={item.id}
-                className=" flex justify-center items-center flex-col gap-1.5 w-[200px] h-[200px] md:w-[250px] md:h-[250px] rounded-md shadow-md border text-gray-900 px-2"
+                className=" flex justify-center items-center flex-col gap-1.5 w-full h-[200px] md:w-[250px] md:h-[250px] rounded-md shadow-md border text-gray-900 px-2"
               >
                 <IconComponents />
                 <p className=" font-bold text-2xl">{item.years}</p>
-                <p className=" text-gray-500 text-sm">{item.type}</p>
+                <p className=" text-gray-500 text-sm text-center">
+                  {item.type}
+                </p>
               </div>
             );
           })}
