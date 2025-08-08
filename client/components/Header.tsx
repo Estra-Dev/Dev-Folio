@@ -9,7 +9,11 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Header = () => {
   const [text] = useTypewriter({
-    words: ["Full Stack Developer", "Data Analyst"],
+    words: [
+      "Full Stack Developer",
+      "MERN & Next.js Specialist",
+      "Data Analyst",
+    ],
     loop: true,
     typeSpeed: 80,
     deleteSpeed: 100,
@@ -42,9 +46,10 @@ const Header = () => {
             </span>
           </h1>
           <p className=" mt-7 text-sm md:text-xl font-medium text-gray-800/70 space-x-5">
-            I craft digital experiences that blend beautiful design with robust
-            functionality. Passionate about creating scalable solutions that
-            make a difference.
+            I craft and build fast, scalable, and user-friendly web applications
+            and digital experiences that blend beautiful design, solve
+            real-world problems with robust functionality. Passionate about
+            creating scalable solutions that make a difference.
           </p>
           <div className=" flex flex-row gap-2 justify-center items-center md:gap-6 mt-4 text-gray-800/70">
             <span className=" flex gap-1 items-center text-sm md:text-[16px] font-medium">

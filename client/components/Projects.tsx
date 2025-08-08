@@ -12,8 +12,9 @@ const Projects = () => {
       gitLink: "https://github.com/Estra-Dev/wellnesshub.git",
       webLink: "https://wellnesshub-5gzg.vercel.app/",
       description:
-        "This is a frontend Hospital Web App with login integration, Payment integration, patient management and admin Dashboard.",
+        "An appointment booking system for health and wellness service",
       stack: ["TypeScript", "Next.Js", "Tailwind", "Shad cn"],
+      solution: "Enable Users to book without maaking phone calls",
     },
     {
       name: "Speedy",
@@ -31,6 +32,7 @@ const Projects = () => {
         "Shad cn",
         "Stripe",
       ],
+      solution: "Choose your comfort car based on distance",
     },
     {
       name: "QuickPlanna",
@@ -38,7 +40,7 @@ const Projects = () => {
       gitLink: "https://github.com/Estra-Dev/income_planner.git",
       webLink: "https://quick-planna.onrender.com",
       description:
-        "A tool that helps income earner plan their income properly for better decision making in the feature with simple analytics, proper documentaions. ",
+        "An income planning web app/tool to simplify how income earners plan properly for better decision. ",
       stack: [
         "JavaScript",
         "React.Js",
@@ -47,6 +49,7 @@ const Projects = () => {
         "Node.Js",
         "Tailwind",
       ],
+      solution: "Helped users keep track of their income and also plan it",
     },
   ];
 
@@ -99,6 +102,16 @@ const Projects = () => {
                 }}
               >
                 {item.description}
+              </p>
+            </div>
+            <div className=" w-full px-3 pb-2 text-gray-500 font-medium text-sm">
+              <p
+                style={{
+                  lineHeight: "1.5rem",
+                }}
+              >
+                <span className=" font-bold">Solution: </span>
+                {item.solution}
               </p>
             </div>
             {/* Pr Stack */}

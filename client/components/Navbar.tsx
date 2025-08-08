@@ -89,7 +89,7 @@ const Navbar = () => {
               side="right"
               className=" bg-white/90 backdrop-blur-md text-gray-800"
             >
-              <div className=" mt-16 flex flex-col gap-5 pl-2">
+              <div className=" mt-16 flex flex-col gap-5 px-2">
                 {menu.map((item) => {
                   const isActive = pathName === item.href;
 
