@@ -4,10 +4,25 @@ import React, { ReactNode } from "react";
 
 const About_Me = () => {
   const about = [
-    { icon: Code, years: 15, type: "Projects Completed", id: 1 },
+    {
+      icon: Code,
+      years: "Clean Code",
+      type: "Writing maintainable, scablable code that stands the test of time",
+      id: 1,
+    },
     { icon: Globe, years: 5, type: "Years Experience", id: 2 },
-    { icon: Palette, years: 12, type: "Technologies", id: 3 },
-    { icon: Database, years: 10, type: "Happy Clients", id: 4 },
+    {
+      icon: Palette,
+      years: "Design Focus",
+      type: "Bridging the gap between design and development for pixel-perfect results",
+      id: 3,
+    },
+    {
+      icon: Database,
+      years: "Performance",
+      type: "Optimizing applications for speed, accessibilty, and user experience",
+      id: 4,
+    },
   ];
 
   return (
@@ -74,10 +89,10 @@ const About_Me = () => {
             return (
               <div
                 key={item.id}
-                className=" flex justify-center items-center flex-col gap-1.5 w-[150px] h-[150px] md:w-[200px] md:h-[200px] rounded-md shadow-md border text-gray-900"
+                className=" flex justify-center items-center flex-col gap-1.5 w-[200px] h-[200px] md:w-[250px] md:h-[250px] rounded-md shadow-md border text-gray-900 px-2"
               >
                 <IconComponents />
-                <p className=" font-bold text-2xl">{item.years}+</p>
+                <p className=" font-bold text-2xl">{item.years}</p>
                 <p className=" text-gray-500 text-sm">{item.type}</p>
               </div>
             );
