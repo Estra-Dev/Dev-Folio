@@ -12,11 +12,8 @@ const Projects = () => {
       gitLink: "https://github.com/Estra-Dev/wellnesshub.git",
       webLink: "https://wellnesshub-5gzg.vercel.app/",
       description:
-<<<<<<< HEAD
         "An appointment booking system for health and wellness service",
-=======
-        "This is the frontend part of a Hospital Web App with login integration, Payment integration, patient management and admin Dashboard.",
->>>>>>> fc9d34d90c7eaf1ff46e9745f733487a059df8a8
+
       stack: ["TypeScript", "Next.Js", "Tailwind", "Shad cn"],
       solution: "Enable Users to book without maaking phone calls",
     },
@@ -44,11 +41,8 @@ const Projects = () => {
       gitLink: "https://github.com/Estra-Dev/income_planner.git",
       webLink: "https://quick-planna.onrender.com",
       description:
-<<<<<<< HEAD
         "An income planning web app/tool to simplify how income earners plan properly for better decision. ",
-=======
-        "A tool that helps income earner plan their income properly for better decision making in the future with simple analytics, proper documentaions. ",
->>>>>>> fc9d34d90c7eaf1ff46e9745f733487a059df8a8
+
       stack: [
         "JavaScript",
         "React.Js",
