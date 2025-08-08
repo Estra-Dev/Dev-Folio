@@ -51,7 +51,9 @@ const Contact = () => {
 
       <form onSubmit={handleSubmit} className=" max-w-2xl mx-auto mt-4 px-2">
         <div className=" flex flex-col gap-1 w-full items-start">
-          <label htmlFor="subject">Subject</label>
+          <label htmlFor="subject" className=" font-medium text-gray-800">
+            Subject
+          </label>
           <input
             type="text"
             name="subject"
@@ -61,8 +63,10 @@ const Contact = () => {
             className=" border w-full p-2 rounded-md"
           />
         </div>
-        <div className=" flex flex-col gap-1 w-full items-start">
-          <label htmlFor="message">Message</label>
+        <div className=" flex flex-col gap-1 w-full items-start mt-3">
+          <label htmlFor="message" className=" font-medium text-gray-800">
+            Message
+          </label>
           <textarea
             name="subject"
             value={message}
