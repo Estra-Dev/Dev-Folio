@@ -56,15 +56,15 @@ const Projects = () => {
   ];
 
   return (
-    <div className=" max-w-6xl mx-auto mt-6 px-2 bg-gray-100 p-2">
-      <h1 className=" text-center text-4xl text-gray-800 font-bold">
+    <div className=" max-w-6xl mx-auto mt-6 px-2 bg-gray-100 dark:bg-gray-800/30 p-2">
+      <h1 className=" text-center text-4xl text-gray-800 dark:text-gray-100 font-bold">
         Featured Projects
       </h1>
       <div className=" grid grid-cols-1 md:grid-cols-3 my-10 gap-5 w-full">
         {projects.map((item, index) => (
           <div
             key={index}
-            className=" py-2 rounded-md shadow-md border max-w-xl w-full bg-white"
+            className=" py-2 rounded-md shadow-md dark:shadow-gray-800/30 border max-w-xl w-full bg-white dark:bg-gray-900/90 dark:border-gray-700"
           >
             {/* Pr Image */}
             <div className=" w-full">
@@ -78,7 +78,9 @@ const Projects = () => {
             </div>
             {/* Pr name & link */}
             <div className=" flex justify-between my-4 px-3 border-b-2 py-2">
-              <p className=" text-gray-800 font-medium">{item.name}</p>
+              <p className=" text-gray-800 dark:text-gray-100 font-medium">
+                {item.name}
+              </p>
               <span className=" flex item-center gap-2">
                 <Link
                   target="_blank"
@@ -97,7 +99,7 @@ const Projects = () => {
               </span>
             </div>
             {/* description */}
-            <div className=" w-full px-3 pb-2 text-gray-500 font-medium text-sm">
+            <div className=" w-full px-3 pb-2 text-gray-500 dark:text-gray-400 font-medium text-sm">
               <p
                 style={{
                   lineHeight: "1.5rem",
@@ -106,7 +108,7 @@ const Projects = () => {
                 {item.description}
               </p>
             </div>
-            <div className=" w-full px-3 pb-2 text-gray-500 font-medium text-sm">
+            <div className=" w-full px-3 pb-2 text-gray-500 dark:text-gray-400 font-medium text-sm">
               <p
                 style={{
                   lineHeight: "1.5rem",
@@ -120,7 +122,7 @@ const Projects = () => {
             <div className=" flex flex-wrap justify-start gap-3 items-center w-full px-2">
               {item.stack.map((stack, index) => (
                 <button
-                  className=" p-1 border text-xs rounded-md font-medium text-gray-800"
+                  className=" p-1 border dark:border-gray-700 text-xs rounded-md font-medium text-gray-800 dark:text-gray-100"
                   key={index}
                 >
                   {stack}

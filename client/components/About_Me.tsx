@@ -26,13 +26,13 @@ const About_Me = () => {
   ];
 
   return (
-    <div className=" max-w-7xl w-full mx-auto mt-32 md:pt-20 px-4 pb-4">
-      <h1 className=" text-center font-bold text-gray-800 text-4xl mb-4">
+    <div className=" max-w-7xl w-full mx-auto mt-32 md:pt-20 px-4 pb-4 ">
+      <h1 className=" text-center font-bold text-gray-800 text-4xl mb-4 dark:text-gray-100">
         About Me
       </h1>
       <div className=" md:flex justify-center gap-4 items-start mt-6 w-full mx-auto">
         {/* Description */}
-        <div className=" w-full mb-4 md:w-xl font-medium text-sm md:text-lg text-gray-800">
+        <div className=" w-full mb-4 md:w-xl font-medium text-sm md:text-lg text-gray-800 dark:text-gray-100">
           <p
             style={{
               lineHeight: "2rem",
@@ -64,7 +64,7 @@ const About_Me = () => {
             <Link
               target="_blank"
               href={"https://github.com/Estra-Dev"}
-              className=" px-3 py-1 border font-medium text-sm text-gray-800 rounded-md flex items-center gap-3 shadow-sm"
+              className=" px-3 py-1 border font-medium text-sm text-gray-800 dark:text-gray-100 rounded-md flex items-center gap-3 shadow-sm"
             >
               <Github className=" w-4 h-4" />
               <p>GitHub</p>
@@ -74,7 +74,7 @@ const About_Me = () => {
               href={
                 "https://www.linkedin.com/in/dominion-ikonwa-54348a207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               }
-              className=" px-3 py-1 border font-medium text-sm text-gray-800 rounded-md flex items-center gap-3 shadow-sm"
+              className=" px-3 py-1 border font-medium text-sm text-gray-800 dark:text-gray-100 rounded-md flex items-center gap-3 shadow-sm"
             >
               <Linkedin className=" w-4 h-4" />
               <p>LinkedIn</p>
@@ -89,11 +89,11 @@ const About_Me = () => {
             return (
               <div
                 key={item.id}
-                className=" flex justify-center items-center flex-col gap-1.5 w-full h-[200px] md:w-[250px] md:h-[250px] rounded-md shadow-md border text-gray-900 px-2"
+                className=" flex justify-center items-center flex-col gap-1.5 w-full h-[200px] md:w-[250px] md:h-[250px] rounded-md shadow-md border dark:border-gray-700 text-gray-900 dark:text-gray-100 px-2"
               >
                 <IconComponents />
                 <p className=" font-bold text-2xl">{item.years}</p>
-                <p className=" text-gray-500 text-sm text-center">
+                <p className=" text-gray-500 dark:text-gray-400 text-sm text-center">
                   {item.type}
                 </p>
               </div>

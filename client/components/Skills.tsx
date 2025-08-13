@@ -45,21 +45,23 @@ const Skills = () => {
   ];
   return (
     <div className=" max-w-6xl w-full mx-auto p-4">
-      <h1 className=" font-bold text-4xl text-gray-800 text-center">
+      <h1 className=" font-bold text-4xl text-gray-800 dark:text-gray-100 text-center">
         My Skills
       </h1>
 
       <div className=" ">
         {/* frontend */}
         <div className=" mt-4">
-          <h1 className=" font-bold text-2xl text-gray-700">Frontend</h1>
+          <h1 className=" font-bold text-2xl text-gray-700 dark:text-gray-100">
+            Frontend
+          </h1>
           <div className=" grid grid-cols-3 md:grid-cols-7 gap-5 justify-center items-center mt-3">
             {frontend.map((item, index) => {
               const IconComponents = item.icon;
 
               return (
                 <div
-                  className=" py-2 px-4 rounded-md border bg-gray-200 text-gray-700 flex flex-col justify-center items-center gap-2"
+                  className=" py-2 px-4 rounded-md border bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-100 flex flex-col justify-center items-center gap-2"
                   key={index}
                 >
                   <IconComponents
@@ -74,14 +76,16 @@ const Skills = () => {
         </div>
         {/* backend */}
         <div className=" mt-6">
-          <h1 className=" font-bold text-2xl text-gray-700">Backend</h1>
+          <h1 className=" font-bold text-2xl text-gray-700 dark:text-gray-100">
+            Backend
+          </h1>
           <div className=" grid grid-cols-3 md:grid-cols-7 gap-5 justify-center items-center mt-3">
             {backend.map((item, index) => {
               const IconComponents = item.icon;
 
               return (
                 <div
-                  className=" py-2 px-4 rounded-md border bg-gray-200 text-gray-700 flex flex-col justify-center items-center gap-2"
+                  className=" py-2 px-4 rounded-md border bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-100 flex flex-col justify-center items-center gap-2"
                   key={index}
                 >
                   <IconComponents
@@ -96,14 +100,16 @@ const Skills = () => {
         </div>
         {/* Tools */}
         <div className=" mt-6">
-          <h1 className=" font-bold text-2xl text-gray-700">Tools</h1>
+          <h1 className=" font-bold text-2xl text-gray-700 dark:text-gray-100">
+            Tools
+          </h1>
           <div className=" grid grid-cols-3 md:grid-cols-7 gap-5 justify-center items-center mt-3">
             {tools.map((item, index) => {
               const IconComponents = item.icon;
 
               return (
                 <div
-                  className=" py-2 px-4 rounded-md border bg-gray-200 text-gray-700 flex flex-col justify-center items-center gap-2"
+                  className=" py-2 px-4 rounded-md border bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-100 flex flex-col justify-center items-center gap-2"
                   key={index}
                 >
                   <IconComponents

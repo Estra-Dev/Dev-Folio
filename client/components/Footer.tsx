@@ -6,13 +6,13 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <footer className=" w-full border-t-2 py-6 mt-6 bg-gray-200/60">
+    <footer className=" w-full border-t-2 py-6 mt-6 bg-gray-200/60 dark:bg-gray-800/60 dark:border-gray-700">
       <div className=" max-w-5xl mx-auto px-3">
         <div className=" md:flex justify-between items-center">
-          <p className=" text-gray-500 text-sm mt-2">
+          <p className=" text-gray-500 dark:text-gray-400 text-sm mt-2">
             &copy; {date} Dev King Studios. All right Reverved
           </p>
-          <div className=" flex justify-start md:justify-end gap-6 items-center text-gray-800 font-medium mt-2">
+          <div className=" flex justify-start md:justify-end gap-6 items-center text-gray-800 dark:text-gray-600 font-medium mt-2">
             <Link href={"https://github.com/Estra-Dev"} target="_blank">
               <Github className=" w-4 h-4" />
             </Link>

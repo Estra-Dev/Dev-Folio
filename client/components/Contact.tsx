@@ -40,10 +40,10 @@ const Contact = () => {
   console.log(subject, message);
   return (
     <div className=" max-w-3xl mx-auto my-10 border-b-2 pb-4 px-3 text-center">
-      <h1 className=" text-4xl font-bold text-gray-800 my-6">
+      <h1 className=" text-4xl font-bold text-gray-800 dark:text-gray-100 my-6">
         Let's Work Together
       </h1>
-      <p className=" text-gray-500 text-[16px] md:text-[20px]">
+      <p className=" text-gray-500 dark:text-gray-400 text-[16px] md:text-[20px]">
         I'm always interested in new opportunities and exciting projects.
         Whether you have a question or just want to say hi, feel free to reach
         out!
@@ -51,7 +51,10 @@ const Contact = () => {
 
       <form onSubmit={handleSubmit} className=" max-w-2xl mx-auto mt-4 px-2">
         <div className=" flex flex-col gap-1 w-full items-start">
-          <label htmlFor="subject" className=" font-medium text-gray-800">
+          <label
+            htmlFor="subject"
+            className=" font-medium text-gray-800 dark:text-gray-100"
+          >
             Subject
           </label>
           <input
@@ -60,11 +63,14 @@ const Contact = () => {
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             placeholder="Subject..."
-            className=" border w-full p-2 rounded-md"
+            className=" border dark:border-gray-700 w-full p-2 rounded-md"
           />
         </div>
         <div className=" flex flex-col gap-1 w-full items-start mt-3">
-          <label htmlFor="message" className=" font-medium text-gray-800">
+          <label
+            htmlFor="message"
+            className=" font-medium text-gray-800 dark:text-gray-100"
+          >
             Message
           </label>
           <textarea
@@ -73,11 +79,11 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Your Message..."
             rows={5}
-            className=" border w-full p-2 rounded-md"
+            className=" border dark:border-gray-700 w-full p-2 rounded-md"
           />
         </div>
         {error && (
-          <p className=" mt-2 rounded-md p-2 text-red-500 bg-red-400/20">
+          <p className=" mt-2 rounded-md p-2 text-red-500 dark:bg-red-300/35 bg-red-400/20">
             {error}
           </p>
         )}
@@ -90,7 +96,7 @@ const Contact = () => {
           <Button
             disabled={success}
             type="submit"
-            className=" px-3 py-1 bg-gray-800 font-medium text-sm text-white rounded-md items-center gap-3 shadow-sm mt-2 flex justify-center"
+            className=" px-3 py-1 bg-gray-800  font-medium text-sm text-white hover:text-gray-800 rounded-md items-center gap-3 shadow-sm mt-2 flex justify-center"
           >
             <Mail className=" w-4 h-4" />
             <p>Email Me</p>
@@ -98,7 +104,7 @@ const Contact = () => {
           <Link
             target="_blank"
             href={"https://www.linkedin.com/in/dominion-ikonwa-54348a207/"}
-            className=" px-3 py-1 border font-medium text-sm text-gray-800 rounded-md items-center gap-3 shadow-sm mt-2 flex justify-center"
+            className=" px-3 py-1 border dark:border-gray-700 font-medium text-sm text-gray-800 dark:text-gray-100 rounded-md items-center gap-3 shadow-sm mt-2 flex justify-center"
           >
             <Linkedin className=" w-4 h-4" />
             <p>LinkedIn</p>
